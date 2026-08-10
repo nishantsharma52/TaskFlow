@@ -34,7 +34,7 @@ export const createTodo = async (req, res) => {
     }
 };
 
-// Get All Todos
+//++++++++++++++++++++++ Get All Todos +++++++++++++++++++
 export const getTodos = async (req, res) => {
     try {
         const todos = await Todo.find({
@@ -55,7 +55,7 @@ export const getTodos = async (req, res) => {
     }
 };
 
-// Update Todo
+//  +++++++++++++++++++++ Update Todo ++++++++++++++++++++++++++
 export const updateTodo = async (req, res) => {
     try {
         const { id } = req.params;
@@ -98,7 +98,7 @@ export const updateTodo = async (req, res) => {
     }
 };
 
-// Delete Todo
+// ++++++++++++++++++ Delete Todo ++++++++++++++++++++++++++++
 export const deleteTodo = async (req, res) => {
     try {
         const { id } = req.params;
